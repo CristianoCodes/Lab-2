@@ -1,5 +1,9 @@
 public class PizzaFactory {
     public Pizza createPizza(String type) {
+        if (type == null) {
+            return null;
+        }
+        
         switch (type.toLowerCase()) {
             case "cheese":
                 return new CheesePizza();
@@ -9,8 +13,6 @@ public class PizzaFactory {
                 return new PepperoniPizza();
             case "glutenfree":
                 return new GlutenFreePizza();
-            case "":
-                return null;
             default:
                 return new InvalidPizza();
         }

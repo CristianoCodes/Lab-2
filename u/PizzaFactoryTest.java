@@ -54,7 +54,7 @@ public class PizzaFactoryTest {
 
         Pizza pizza = factory.createPizza("invalid");
 
-        assertNull(pizza);
+        assertTrue(pizza instanceof InvalidPizza);
     }
 
     @Test
