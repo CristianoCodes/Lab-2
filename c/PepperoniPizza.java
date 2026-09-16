@@ -1,5 +1,5 @@
 public class PepperoniPizza extends Pizza {
-    @override
+    @Override
     public void prepare() {
         System.out.println("Adding the pepperoni...");
     }

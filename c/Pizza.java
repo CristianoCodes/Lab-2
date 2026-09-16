@@ -12,4 +12,8 @@ public abstract class Pizza {
     public void box() {
         System.out.println("Boxing your pizza...");
     }
+
+    public void finished() {
+        System.out.println("Your pizza is complete! Enjoy!");
+    }
 }

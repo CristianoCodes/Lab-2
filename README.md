@@ -1,1 +1,2 @@
-# Lab-2
+javac -d out src/*.java
+java -cp out PizzaStore
