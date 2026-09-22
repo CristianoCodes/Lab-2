@@ -4,7 +4,7 @@
 
 3. I wanted to make each dialogue unique depending on which pizza type you picked, and I wanted to add special dialogues for when you either input nothing or when you input something that is not an option.
 
-4. My tests ensure the entire program does what it should. I added tests for each pizza type, as well as tests for null inputs, or for when you input something that is not an option.
+4. My tests ensure the entire program does what it should. I added tests for each pizza type, as well as tests for null inputs, since a null input has a unique output.
 
 5. I managed to get through this lab much better than the first one. It was very fun for me to work on, and I can't wait to see what more we can do in this class. I'm also starting to remember Java again, as I am more used to C++.
 
