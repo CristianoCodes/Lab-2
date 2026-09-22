@@ -8,9 +8,15 @@ public class PizzaStore {
     }
     
     public Pizza orderPizza(String type) {
-        Pizza pizza = factory.createPizza(type);
-        if (pizza == null) {
+        if (type == null || type.isEmpty()) {
             System.out.println("Hello? I can't hear you...");
+            return null;
+        }
+
+        Pizza pizza = factory.createPizza(type);
+
+        if (pizza == null) {
+            System.out.println("Sorry, but we don't serve anything like that here...");
             return null;
         }
 

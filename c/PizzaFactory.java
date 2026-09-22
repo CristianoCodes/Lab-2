@@ -1,6 +1,6 @@
 public class PizzaFactory {
     public Pizza createPizza(String type) {
-        if (type == "" || type == null) {
+        if (type == null || type.isEmpty()) {
             return null;
         }
         
@@ -14,7 +14,7 @@ public class PizzaFactory {
             case "glutenfree":
                 return new GlutenFreePizza();
             default:
-                return new InvalidPizza();
+                return null;
         }
     }
 }
