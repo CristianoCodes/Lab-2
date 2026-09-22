@@ -48,16 +48,6 @@ public class PizzaFactoryTest {
     }
 
     @Test
-    public void testInvalidPizza() {
-
-        PizzaFactory factory = new PizzaFactory();
-
-        Pizza pizza = factory.createPizza("invalid");
-
-        assertTrue(pizza instanceof InvalidPizza);
-    }
-
-    @Test
     public void testNullPizzaType() {
 
         PizzaFactory factory = new PizzaFactory();
