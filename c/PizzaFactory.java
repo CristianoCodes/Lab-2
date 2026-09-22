@@ -1,6 +1,6 @@
 public class PizzaFactory {
     public Pizza createPizza(String type) {
-        if (type == null) {
+        if (type == "" || type == null) {
             return null;
         }
         
